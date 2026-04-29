@@ -57,10 +57,9 @@ python main.py --rooms data/rooms.json --students data/students.json --extension
 
 1. Connects to the PostgreSQL database
 2. Creates the schema (tables + indexes) if it doesn't exist
-3. Drops and recreates tables on each run to ensure clean data
-4. Loads rooms first, then students (respecting the foreign key constraint)
-5. Runs 4 reports against the database
-6. Outputs results to `results/report.json` or `results/report.xml`
+3. Loads rooms first, then students (respecting the foreign key constraint)
+4. Runs 4 reports against the database
+5. Outputs results to `results/report.json` or `results/report.xml`
 
 ## Reports
 
@@ -100,5 +99,5 @@ dormitory-report/
 ## Indexes
 
 Indexes are created automatically on:
-- `students.room_id` — used in every JOIN
-- `students.birthday` — used in age calculations
+- `students.room` 
+- `students.birthday`
