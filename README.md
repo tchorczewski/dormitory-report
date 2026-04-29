@@ -102,12 +102,3 @@ dormitory-report/
 Indexes are created automatically on:
 - `students.room_id` — used in every JOIN
 - `students.birthday` — used in age calculations
-- `students.sex` — used in mixed gender query
-
-To view the raw SQL see `indexes.sql`.
-
-## Notes
-
-- All calculations are performed at the database level
-- No ORM is used — raw SQL only
-- Built with OOP and SOLID principles
