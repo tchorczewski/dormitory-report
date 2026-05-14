@@ -91,8 +91,7 @@ dormitory-report/
 ├── results/                # Generated reports go here
 ├── main.py                 # CLI entry point
 ├── .env                    # Database credentials (not committed)
-├── .gitignore
-├── indexes.sql             # Index creation queries
+├── .gitignore          
 └── requirements.txt
 ```
 
